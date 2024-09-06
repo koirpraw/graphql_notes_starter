@@ -102,6 +102,8 @@ The Notes app will require following resolvers:
 2. Query:Query Function to fetch all notes and a single note by id.
 3. Mutation: Mutation functions to create, update, and delete a note.
 
+## Running the server
+
 
 
 
