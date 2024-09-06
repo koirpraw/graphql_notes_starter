@@ -1,7 +1,10 @@
 # GraphQL starter Project (Notes app): Introduction to GraphQL in Node.js using Apollo Server
 
 ## About the project
-This Project is introduction to GraphQL and is meant for beginners who want to learn how to create a GraphQL server in Node.js using Apollo Server. The project is a simple notes app that allows users to create, read, update, and delete notes. This project aims to explain the basics of GraphQL in NodeJS. Get familiar with what libraries you need. How to setup the server and run the server. The Project is modeled around simple Notes app, so you will be able to use GraphQL operations like `Query` & `Mutation` to perform CRUD operations on notes.For simplicity and to center the focus in the GrapQL itself we are not using any external database, instead we are using an array to store the notes (consider it an inmemory database).
+This Project is introduction to GraphQL and is meant for beginners who want to learn how to create a GraphQL server in Node.js using Apollo Server. It aims to explain the basics of GraphQL in NodeJS, gets you familiar the libraries, how to setup/run the server. 
+
+The Project is modeled around simple Notes app where you will be able to use GraphQL operations like `Query` & `Mutation` to perform CRUD operations on notes.For simplicity and to center the focus in the GrapQL itself, we are not using any external database, instead we are using an array to store the notes (consider it an inmemory database).
+
 By The end of this project you will be able to understand the basics of GraphQL, how to create a GraphQL server in Node.js using Apollo Server, how to define a schema using the gql tag, how to define resolvers(resolver functions) for the schema, and how to start the server.
 You will be able to read all notes, read a single note, create a new note, update an existing note, and delete a note in the Apollo GraphQL server.
 Keep in mind though these changes are not persistent as we are not using any database, so once you stop the server all the notes will be lost.
@@ -92,7 +95,13 @@ Once the basic concept is established , we can take the concept and apply it to 
 The schema for the Notes app API will have the following types:
 1. Note: A type that represents a note with fields id, title, and content.
 2. Query: A type that represents the queries that can be made to fetch data.
-3. Mutation: A type that represents the mutations that can be made to write data.
+
+## Defining the resolvers
+The Notes app will require following resolvers:
+1. Note: Note Object type with fields id, title, description,isLiked,createdDate,
+2. Query:Query Function to fetch all notes and a single note by id.
+3. Mutation: Mutation functions to create, update, and delete a note.
+
 
 
 
