@@ -57,7 +57,7 @@ const typeDefs = gql`
    ```javascript
     const resolvers = {
       Query: {
-          hello: () => 'Hello, World!',
+          hello: () => 'Hellow  world! This is your First GraphQL query',
       },
   };
   ```
@@ -83,6 +83,17 @@ const { url } = await startStandaloneServer(server, {
 ```bash
 node server.js
 ```
+
+## Understanding GraphQL API with real world application: Notes App API
+The steps and introduction above should give you a good understanding of what is GraphQL and how you can set up and use in Node.js using Apollo Server. By following the implementations you should have a succesfully running GraphQL server . You should be able to run a Query which returns a string `Hellow  world! This is your First GraphQL query`. 
+Once the basic concept is established , we can take the concept and apply it to the real world application. In our case we will apply it to a Notes application where we will be able to perform CRUD operations on notes. We will be able to read all notes, read a single note, create a new note, update an existing note, and delete a note in the Apollo GraphQL server. These are accomplished using the GraphQL operations like `Query` & `Mutation`.
+
+## Defining the schema
+The schema for the Notes app API will have the following types:
+1. Note: A type that represents a note with fields id, title, and content.
+2. Query: A type that represents the queries that can be made to fetch data.
+3. Mutation: A type that represents the mutations that can be made to write data.
+4. Schema: A type that represents the schema that includes the queries and mutations.
 
 
 
