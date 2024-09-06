@@ -1,7 +1,13 @@
 # GraphQL starter Project (Notes app): Introduction to GraphQL in Node.js using Apollo Server
 
 ## About the project
-This Project is introduction to GraphQL and is meant for beginners who want to learn how to create a GraphQL server in Node.js using Apollo Server. The project is a simple notes app that allows users to create, read, update, and delete notes. This project aims to explain the basics of GraphQL in NodeJS. Get familiar with what libraries you need. How to setup the server and run the server. The Project is modeled around simple Notes app, so you will be able to use GraphQL operations like `Query` & `Mutation` to perform CRUD operations on notes.For simplicity and to center the focus in the GrapQL itself we are not using any external database, instead we are using an array to store the notes (consider it an inmemory database).
+This Project is introduction to GraphQL and is meant for beginners who want to learn how to work with GraphQL using in Node.js and Apollo Server. It covers basics of GraphQL using NodeJS gets you familiar with libraries you need and how to setup/run the Apollo Server. There are two branches in the Project: main  and starter.
+-starter: This branch contains the starter code for the project. Here you will be able to setup and run the server with minimal code and is intended to get you familiarized with the basics of GraphQL. Each Module/step is briefly explained with comments.
+
+-main: This branch is more of a complete project that is modeled around a simple Note app. Here you will be able to perform CRUD operations on notes using GraphQL operations like Query & Mutation. The Project is more detailed and is intended to give you a better understanding of how to work with GraphQL in Node.js using Apollo Server.
+** note: For simplicity and to center the focus in the GrapQL itself we are not using any external database, instead we are using an array to store the notes (consider it an inmemory database).
+
+
 By The end of this project you will be able to understand the basics of GraphQL, how to create a GraphQL server in Node.js using Apollo Server, how to define a schema using the gql tag, how to define resolvers(resolver functions) for the schema, and how to start the server.
 You will be able to read all notes, read a single note, create a new note, update an existing note, and delete a note in the Apollo GraphQL server.
 Keep in mind though these changes are not persistent as we are not using any database, so once you stop the server all the notes will be lost.
