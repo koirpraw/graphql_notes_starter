@@ -93,7 +93,7 @@ The schema for the Notes app API will have the following types:
 1. Note: A type that represents a note with fields id, title, and content.
 2. Query: A type that represents the queries that can be made to fetch data.
 3. Mutation: A type that represents the mutations that can be made to write data.
-4. Schema: A type that represents the schema that includes the queries and mutations.
+
 
 
 
