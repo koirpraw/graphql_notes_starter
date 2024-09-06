@@ -39,6 +39,8 @@ import { ApolloServer } from 'apollo-server';
 import { gql } from 'graphql-tag';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
+```
+
 // startStandaloneServer is used to start the server in standalone mode. It is useful when you want to start the server without using the ApolloServer constructor.
 // In our
 
@@ -52,13 +54,14 @@ const typeDefs = gql`
 ```
 
 4. Define the resolvers for the schema:
-```javascript
-const resolvers = {
-  Query: {
-    hello: () => 'Hello, world!',
-  },
-};
-```
+   ```javascript
+    const resolvers = {
+      Query: {
+          hello: () => 'Hello, World!',
+      },
+  };
+  ```
+
 
 5. Create an instance of ApolloServer and start the server:
 ```javascript
