@@ -26,6 +26,7 @@ const server = new ApolloServer({
     resolvers
 });
 
+
 const PORT = process.env.PORT || 4000;
 
 // Start the server
